@@ -1,0 +1,2 @@
+printer:blank score=0.278
+For blank printer pages: 1. Check ink level. 2. Run the printer cleaning utility. 3. Print a test page. Follow the device manual.

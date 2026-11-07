@@ -1,0 +1,19 @@
+Configuration: sentence tfidf
+Development top-1 scores
+   answerable   0.32 | What is required for illness extensions?
+   answerable   0.279 | How do I reset a forgotten password?
+   answerable   0.365 | Where do I upload assignments?
+   answerable   0.61 | Can contractors work remotely?
+   unanswerable 0.414 | What is the cafeteria menu today?
+   unanswerable 0.214 | How do I book a tennis court?
+Scores separable on development data: False
+Threshold chosen on development data: 0.2468 | development decisions correct: 5 of 6
+
+Held-out test decisions with this fixed threshold
+   answerable   0.232 rejected | correct decision: False | What do I do for blank printer pages?
+   answerable   0.16 rejected | correct decision: False | How can I recover my login access?
+   answerable   0.137 rejected | correct decision: False | How should I hand in my coursework?
+   answerable   0.209 rejected | correct decision: False | What proof is needed when I was ill?
+   unanswerable 0.269 accepted | correct decision: False | What are tomorrow's flight prices?
+   unanswerable 0.298 accepted | correct decision: False | Who won the football match?
+Test decisions correct: 0 of 6

@@ -1,0 +1,2 @@
+assessment:late score=0.506
+Late submission is normally penalized. Students with illness may request an extension with medical evidence before the deadline.

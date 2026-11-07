@@ -1,0 +1,1497 @@
+{
+ "model_available": false,
+ "model_error": "ModuleNotFoundError: No module named 'sentence_transformers'",
+ "load_seconds": null,
+ "metrics": [
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "split": "dev",
+   "hit": 0.5,
+   "mrr": 0.375,
+   "chunks": 27,
+   "encode_seconds": 0.0017203926000000536,
+   "search_seconds": 6.514955000014311e-05
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "split": "test",
+   "hit": 0.25,
+   "mrr": 0.25,
+   "chunks": 27,
+   "encode_seconds": 0.0017203926000000536,
+   "search_seconds": 6.514955000014311e-05
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "split": "dev",
+   "hit": 1.0,
+   "mrr": 0.7083333333333333,
+   "chunks": 33,
+   "encode_seconds": 0.0015828631000012194,
+   "search_seconds": 6.413395000066657e-05
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "split": "test",
+   "hit": 0.25,
+   "mrr": 0.25,
+   "chunks": 33,
+   "encode_seconds": 0.0015828631000012194,
+   "search_seconds": 6.413395000066657e-05
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "split": "dev",
+   "hit": 1.0,
+   "mrr": 1.0,
+   "chunks": 35,
+   "encode_seconds": 0.0014973863500003404,
+   "search_seconds": 6.907795000117289e-05
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "split": "test",
+   "hit": 0.25,
+   "mrr": 0.25,
+   "chunks": 35,
+   "encode_seconds": 0.0014973863500003404,
+   "search_seconds": 6.907795000117289e-05
+  }
+ ],
+ "per_query": [
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "What is required for illness extensions?",
+   "split": "dev",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "late_exam:0",
+     "doc": "late_exam",
+     "start": 0,
+     "end": 263,
+     "score": 0.3797976032184889,
+     "relevant": false,
+     "text": "The Examination Office issues this addendum for students of the Faculty of Computing who miss a coursework deadline because of illness or a family emergency. Late submission is accepted without penalty for two days after the published deadline. Illness extensions"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:0",
+     "doc": "late",
+     "start": 0,
+     "end": 291,
+     "score": 0.3133201205987941,
+     "relevant": true,
+     "text": "Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home test that is marked by the department during the teaching term. Late submission is normally penalized. Illness extensions require medical evidence before the deadline. Students must"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 264,
+     "end": 509,
+     "score": 0.11853591851221487,
+     "relevant": false,
+     "text": "require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is unsigned. Students who cannot obtain a certificate in time may"
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "How do I reset a forgotten password?",
+   "split": "dev",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:0",
+     "doc": "password",
+     "start": 0,
+     "end": 238,
+     "score": 0.1733613949376629,
+     "relevant": false,
+     "text": "The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every ninety days, and an expired password blocks access to email, the learning portal and the campus Wi-Fi until it is changed. Reset"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:1",
+     "doc": "password",
+     "start": 239,
+     "end": 469,
+     "score": 0.16294759852285365,
+     "relevant": false,
+     "text": "a forgotten password using the recovery link. If the link has expired, contact the IT help desk with your student ID, for example at the service counter in the main library or by telephone during office hours. Never share recovery"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "password:4",
+     "doc": "password",
+     "start": 957,
+     "end": 1014,
+     "score": 0.1352766181889634,
+     "relevant": false,
+     "text": "claim to come from the university but ask for a password."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "Where do I upload assignments?",
+   "split": "dev",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 266,
+     "score": 0.2881607296463456,
+     "relevant": true,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. If the portal is unavailable, email the file to the course coordinator before the deadline"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.2878115519223657,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 484,
+     "end": 718,
+     "score": 0.17367141036937644,
+     "relevant": false,
+     "text": "portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty"
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "Can contractors work remotely?",
+   "split": "dev",
+   "doc": "contractor",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "contractor:0",
+     "doc": "contractor",
+     "start": 0,
+     "end": 263,
+     "score": 0.5163944668380996,
+     "relevant": false,
+     "text": "Remote work arrangements are reviewed each year by the human resources office for all people who work at the university, and the rules differ between employees and contractors. Employees may request remote work with manager approval. Contractors can work remotely"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 264,
+     "end": 492,
+     "score": 0.16179471753349273,
+     "relevant": false,
+     "text": "only if the signed contract permits it. Employee rules do not apply to contractors. A manager cannot add remote work to a contract by email, and a contractor who has not been given written permission by the contracts office must"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:3",
+     "doc": "contractor",
+     "start": 735,
+     "end": 911,
+     "score": 0.06833012371125231,
+     "relevant": false,
+     "text": "within ten working days. Approval can be withdrawn with two weeks of notice. Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "What is the cafeteria menu today?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 484,
+     "end": 718,
+     "score": 0.36046423802084426,
+     "relevant": false,
+     "text": "portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:2",
+     "doc": "password",
+     "start": 470,
+     "end": 698,
+     "score": 0.3207936088412271,
+     "relevant": false,
+     "text": "codes. The recovery link is sent to the personal email address registered with the admissions office, and it stays valid for thirty minutes after it is requested, so the request should be made only when the student can open that"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:0",
+     "doc": "late",
+     "start": 0,
+     "end": 291,
+     "score": 0.26121882772844857,
+     "relevant": false,
+     "text": "Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home test that is marked by the department during the teaching term. Late submission is normally penalized. Illness extensions require medical evidence before the deadline. Students must"
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "How do I book a tennis court?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.1630062210952349,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 2,
+     "chunk_id": "printer:3",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.15903600827808143,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 264,
+     "end": 492,
+     "score": 0.15109809307007815,
+     "relevant": false,
+     "text": "only if the signed contract permits it. Employee rules do not apply to contractors. A manager cannot add remote work to a contract by email, and a contractor who has not been given written permission by the contracts office must"
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "What do I do for blank printer pages?",
+   "split": "test",
+   "doc": "printer",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "printer:0",
+     "doc": "printer",
+     "start": 0,
+     "end": 257,
+     "score": 0.22728582275427467,
+     "relevant": true,
+     "text": "The equipment office maintains networked printers in every computer laboratory, and technicians follow the same checklist when users report a fault. For blank printer pages, check ink levels and run the cleaning utility. Print a test page afterwards. If the"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "printer:3",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.17340695114304217,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.13050675271746073,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "How can I recover my login access?",
+   "split": "test",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:0",
+     "doc": "password",
+     "start": 0,
+     "end": 238,
+     "score": 0.16096238050527215,
+     "relevant": false,
+     "text": "The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every ninety days, and an expired password blocks access to email, the learning portal and the campus Wi-Fi until it is changed. Reset"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:3",
+     "doc": "contractor",
+     "start": 735,
+     "end": 911,
+     "score": 0.09436589780460318,
+     "relevant": false,
+     "text": "within ten working days. Approval can be withdrawn with two weeks of notice. Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "printer:3",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.08493937010254218,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "How should I hand in my coursework?",
+   "split": "test",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.14426714096629314,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:4",
+     "doc": "late",
+     "start": 1073,
+     "end": 1222,
+     "score": 0.13907012512113195,
+     "relevant": false,
+     "text": "never lose marks for lateness. Keep a copy of every document sent to the coursework office, because staff may ask for it again during a later appeal."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:4",
+     "doc": "late_exam",
+     "start": 1009,
+     "end": 1119,
+     "score": 0.12995569380027727,
+     "relevant": false,
+     "text": "course. Students should keep every email they receive from the office until the semester results are released."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "What proof is needed when I was ill?",
+   "split": "test",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 484,
+     "end": 718,
+     "score": 0.1945369263071765,
+     "relevant": false,
+     "text": "portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:2",
+     "doc": "password",
+     "start": 470,
+     "end": 698,
+     "score": 0.16876195888384482,
+     "relevant": false,
+     "text": "codes. The recovery link is sent to the personal email address registered with the admissions office, and it stays valid for thirty minutes after it is requested, so the request should be made only when the student can open that"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 264,
+     "end": 509,
+     "score": 0.16509575131999496,
+     "relevant": false,
+     "text": "require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is unsigned. Students who cannot obtain a certificate in time may"
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "What are tomorrow's flight prices?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 266,
+     "score": 0.20367648016363119,
+     "relevant": false,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. If the portal is unavailable, email the file to the course coordinator before the deadline"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late_exam:4",
+     "doc": "late_exam",
+     "start": 1009,
+     "end": 1119,
+     "score": 0.17931794670428558,
+     "relevant": false,
+     "text": "course. Students should keep every email they receive from the office until the semester results are released."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:3",
+     "doc": "contractor",
+     "start": 735,
+     "end": 911,
+     "score": 0.13170604294187566,
+     "relevant": false,
+     "text": "within ten working days. Approval can be withdrawn with two weeks of notice. Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    }
+   ]
+  },
+  {
+   "strategy": "0",
+   "method": "tfidf",
+   "query": "Who won the football match?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:1",
+     "doc": "assignment",
+     "start": 267,
+     "end": 483,
+     "score": 0.2302950916419955,
+     "relevant": false,
+     "text": "and keep the delivery receipt. Submit the final file as a PDF. Name the file with the course code and your roll number, e.g. CS4944_12345.pdf, so that the marker can match it to the class list without opening it. The"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:3",
+     "doc": "late",
+     "start": 819,
+     "end": 1072,
+     "score": 0.14362463947886983,
+     "relevant": false,
+     "text": "Group assignments follow the same process, but every member who needs an extension must submit a separate request. Work submitted after the extended deadline loses ten percent of its marks for each additional day. Students who submit before the deadline"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:1",
+     "doc": "late",
+     "start": 292,
+     "end": 559,
+     "score": 0.11614084517184557,
+     "relevant": false,
+     "text": "apply through the coursework office and must not ask the course instructor directly, because the instructor cannot approve an extension for any student who has not first completed the online request form, attached the signed medical certificate, listed every affected"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "What is required for illness extensions?",
+   "split": "dev",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "late_exam:0",
+     "doc": "late_exam",
+     "start": 0,
+     "end": 263,
+     "score": 0.3510562479787619,
+     "relevant": false,
+     "text": "The Examination Office issues this addendum for students of the Faculty of Computing who miss a coursework deadline because of illness or a family emergency. Late submission is accepted without penalty for two days after the published deadline. Illness extensions"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 194,
+     "end": 446,
+     "score": 0.302375848378579,
+     "relevant": false,
+     "text": "penalty for two days after the published deadline. Illness extensions require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:0",
+     "doc": "late",
+     "start": 0,
+     "end": 291,
+     "score": 0.28233258143962314,
+     "relevant": true,
+     "text": "Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home test that is marked by the department during the teaching term. Late submission is normally penalized. Illness extensions require medical evidence before the deadline. Students must"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "How do I reset a forgotten password?",
+   "split": "dev",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:1",
+     "doc": "password",
+     "start": 184,
+     "end": 403,
+     "score": 0.27777173010807543,
+     "relevant": true,
+     "text": "portal and the campus Wi-Fi until it is changed. Reset a forgotten password using the recovery link. If the link has expired, contact the IT help desk with your student ID, for example at the service counter in the main"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:5",
+     "doc": "password",
+     "start": 908,
+     "end": 1014,
+     "score": 0.17466232481460237,
+     "relevant": false,
+     "text": "at once, and do not click links in messages that claim to come from the university but ask for a password."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "password:0",
+     "doc": "password",
+     "start": 0,
+     "end": 238,
+     "score": 0.1626407552824946,
+     "relevant": false,
+     "text": "The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every ninety days, and an expired password blocks access to email, the learning portal and the campus Wi-Fi until it is changed. Reset"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "Where do I upload assignments?",
+   "split": "dev",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 266,
+     "score": 0.2813081915734875,
+     "relevant": true,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. If the portal is unavailable, email the file to the course coordinator before the deadline"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.2760542976332015,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 538,
+     "end": 780,
+     "score": 0.2359156611493041,
+     "relevant": false,
+     "text": "latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty megabytes must be compressed first. Do not upload source code"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "Can contractors work remotely?",
+   "split": "dev",
+   "doc": "contractor",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "contractor:0",
+     "doc": "contractor",
+     "start": 0,
+     "end": 263,
+     "score": 0.5308778314362379,
+     "relevant": false,
+     "text": "Remote work arrangements are reviewed each year by the human resources office for all people who work at the university, and the rules differ between employees and contractors. Employees may request remote work with manager approval. Contractors can work remotely"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 191,
+     "end": 429,
+     "score": 0.5165060170266415,
+     "relevant": true,
+     "text": "request remote work with manager approval. Contractors can work remotely only if the signed contract permits it. Employee rules do not apply to contractors. A manager cannot add remote work to a contract by email, and a contractor who has"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:2",
+     "doc": "contractor",
+     "start": 381,
+     "end": 600,
+     "score": 0.07454118676196862,
+     "relevant": false,
+     "text": "to a contract by email, and a contractor who has not been given written permission by the contracts office must work from campus on the days named in the contract, even when the task could be completed from home. Remote"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "What is the cafeteria menu today?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 538,
+     "end": 780,
+     "score": 0.28146035416567683,
+     "relevant": false,
+     "text": "latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty megabytes must be compressed first. Do not upload source code"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:2",
+     "doc": "late",
+     "start": 428,
+     "end": 696,
+     "score": 0.24318717308704285,
+     "relevant": false,
+     "text": "for any student who has not first completed the online request form, attached the signed medical certificate, listed every affected assessment, and confirmed that the information provided is accurate and complete. Each request is reviewed within three working days. An"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:0",
+     "doc": "late",
+     "start": 0,
+     "end": 291,
+     "score": 0.24119704108867787,
+     "relevant": false,
+     "text": "Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home test that is marked by the department during the teaching term. Late submission is normally penalized. Illness extensions require medical evidence before the deadline. Students must"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "How do I book a tennis court?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:5",
+     "doc": "password",
+     "start": 908,
+     "end": 1014,
+     "score": 0.20050727940225624,
+     "relevant": false,
+     "text": "at once, and do not click links in messages that claim to come from the university but ask for a password."
+    },
+    {
+     "rank": 2,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.1449129171425051,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "printer:4",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.1441050425081604,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "What do I do for blank printer pages?",
+   "split": "test",
+   "doc": "printer",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "printer:0",
+     "doc": "printer",
+     "start": 0,
+     "end": 257,
+     "score": 0.23704442615721424,
+     "relevant": true,
+     "text": "The equipment office maintains networked printers in every computer laboratory, and technicians follow the same checklist when users report a fault. For blank printer pages, check ink levels and run the cleaning utility. Print a test page afterwards. If the"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "printer:4",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.1581747263083934,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "printer:3",
+     "doc": "printer",
+     "start": 545,
+     "end": 796,
+     "score": 0.15748208453441453,
+     "relevant": false,
+     "text": "sideways while the rollers are still turning. For a blank scanner image, check document placement and select the correct scanning source. Printers that show a red warning light should be left alone until a technician arrives. Do not refill cartridges,"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "How can I recover my login access?",
+   "split": "test",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:0",
+     "doc": "password",
+     "start": 0,
+     "end": 238,
+     "score": 0.1750524458123934,
+     "relevant": false,
+     "text": "The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every ninety days, and an expired password blocks access to email, the learning portal and the campus Wi-Fi until it is changed. Reset"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:4",
+     "doc": "contractor",
+     "start": 735,
+     "end": 911,
+     "score": 0.0780968984999927,
+     "relevant": false,
+     "text": "within ten working days. Approval can be withdrawn with two weeks of notice. Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "printer:4",
+     "doc": "printer",
+     "start": 732,
+     "end": 944,
+     "score": 0.07122829648050348,
+     "relevant": false,
+     "text": "left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. Report every repeated fault to the equipment office so that the printer can be replaced."
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "How should I hand in my coursework?",
+   "split": "test",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 719,
+     "end": 920,
+     "score": 0.14872117565546109,
+     "relevant": false,
+     "text": "megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:5",
+     "doc": "late",
+     "start": 1008,
+     "end": 1222,
+     "score": 0.12384111766682135,
+     "relevant": false,
+     "text": "for each additional day. Students who submit before the deadline never lose marks for lateness. Keep a copy of every document sent to the coursework office, because staff may ask for it again during a later appeal."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:1",
+     "doc": "late",
+     "start": 213,
+     "end": 482,
+     "score": 0.11413101561333479,
+     "relevant": false,
+     "text": "Illness extensions require medical evidence before the deadline. Students must apply through the coursework office and must not ask the course instructor directly, because the instructor cannot approve an extension for any student who has not first completed the online"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "What proof is needed when I was ill?",
+   "split": "test",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 194,
+     "end": 446,
+     "score": 0.17097902976091792,
+     "relevant": false,
+     "text": "penalty for two days after the published deadline. Illness extensions require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 538,
+     "end": 780,
+     "score": 0.1682650240136514,
+     "relevant": false,
+     "text": "latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. Files larger than twenty megabytes must be compressed first. Do not upload source code"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "password:3",
+     "doc": "password",
+     "start": 525,
+     "end": 768,
+     "score": 0.1182954524438205,
+     "relevant": false,
+     "text": "address registered with the admissions office, and it stays valid for thirty minutes after it is requested, so the request should be made only when the student can open that mailbox immediately. Staff will never ask for your password. Accounts"
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "What are tomorrow's flight prices?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 266,
+     "score": 0.2093598534002484,
+     "relevant": false,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. If the portal is unavailable, email the file to the course coordinator before the deadline"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late_exam:5",
+     "doc": "late_exam",
+     "start": 943,
+     "end": 1119,
+     "score": 0.1393895120708287,
+     "relevant": false,
+     "text": "faculty office will tell students which document applies to their course. Students should keep every email they receive from the office until the semester results are released."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:4",
+     "doc": "contractor",
+     "start": 735,
+     "end": 911,
+     "score": 0.13743817553070742,
+     "relevant": false,
+     "text": "within ten working days. Approval can be withdrawn with two weeks of notice. Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    }
+   ]
+  },
+  {
+   "strategy": "10",
+   "method": "tfidf",
+   "query": "Who won the football match?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 369,
+     "end": 599,
+     "score": 0.24840562962715845,
+     "relevant": false,
+     "text": "your roll number, e.g. CS4944_12345.pdf, so that the marker can match it to the class list without opening it. The portal records the time of every upload, and only the latest upload before the deadline is marked, which means that"
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:4",
+     "doc": "late",
+     "start": 819,
+     "end": 1072,
+     "score": 0.12519219698664746,
+     "relevant": false,
+     "text": "Group assignments follow the same process, but every member who needs an extension must submit a separate request. Work submitted after the extended deadline loses ten percent of its marks for each additional day. Students who submit before the deadline"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:1",
+     "doc": "late",
+     "start": 213,
+     "end": 482,
+     "score": 0.10743227858836431,
+     "relevant": false,
+     "text": "Illness extensions require medical evidence before the deadline. Students must apply through the coursework office and must not ask the course instructor directly, because the instructor cannot approve an extension for any student who has not first completed the online"
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "What is required for illness extensions?",
+   "split": "dev",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "late:0",
+     "doc": "late",
+     "start": 0,
+     "end": 278,
+     "score": 0.32027779821917696,
+     "relevant": true,
+     "text": "Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home test that is marked by the department during the teaching term. Late submission is normally penalized. Illness extensions require medical evidence before the deadline. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 245,
+     "end": 457,
+     "score": 0.30975607392730686,
+     "relevant": false,
+     "text": "Illness extensions require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is unsigned. "
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:0",
+     "doc": "late_exam",
+     "start": 0,
+     "end": 245,
+     "score": 0.1971724050612553,
+     "relevant": false,
+     "text": "The Examination Office issues this addendum for students of the Faculty of Computing who miss a coursework deadline because of illness or a family emergency. Late submission is accepted without penalty for two days after the published deadline. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "How do I reset a forgotten password?",
+   "split": "dev",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:1",
+     "doc": "password",
+     "start": 233,
+     "end": 449,
+     "score": 0.27934766147878165,
+     "relevant": true,
+     "text": "Reset a forgotten password using the recovery link. If the link has expired, contact the IT help desk with your student ID, for example at the service counter in the main library or by telephone during office hours. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:6",
+     "doc": "password",
+     "start": 856,
+     "end": 1014,
+     "score": 0.14440352925799793,
+     "relevant": false,
+     "text": "Report suspicious sign-in messages to the help desk at once, and do not click links in messages that claim to come from the university but ask for a password."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 234,
+     "end": 348,
+     "score": 0.09204325921745196,
+     "relevant": false,
+     "text": "Contractors can work remotely only if the signed contract permits it. Employee rules do not apply to contractors. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "Where do I upload assignments?",
+   "split": "dev",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 176,
+     "score": 0.36462836102566093,
+     "relevant": true,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 694,
+     "end": 920,
+     "score": 0.2655917803225933,
+     "relevant": false,
+     "text": "Files larger than twenty megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 480,
+     "end": 694,
+     "score": 0.18511213839097346,
+     "relevant": false,
+     "text": "The portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "Can contractors work remotely?",
+   "split": "dev",
+   "doc": "contractor",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 234,
+     "end": 348,
+     "score": 0.6096504703375624,
+     "relevant": true,
+     "text": "Contractors can work remotely only if the signed contract permits it. Employee rules do not apply to contractors. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:0",
+     "doc": "contractor",
+     "start": 0,
+     "end": 234,
+     "score": 0.2727356780754803,
+     "relevant": false,
+     "text": "Remote work arrangements are reviewed each year by the human resources office for all people who work at the university, and the rules differ between employees and contractors. Employees may request remote work with manager approval. "
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:2",
+     "doc": "contractor",
+     "start": 348,
+     "end": 563,
+     "score": 0.13509578106507658,
+     "relevant": false,
+     "text": "A manager cannot add remote work to a contract by email, and a contractor who has not been given written permission by the contracts office must work from campus on the days named in the contract, even when the task"
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "What is the cafeteria menu today?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 480,
+     "end": 694,
+     "score": 0.41399273506800593,
+     "relevant": false,
+     "text": "The portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:3",
+     "doc": "password",
+     "start": 477,
+     "end": 706,
+     "score": 0.32669289068726476,
+     "relevant": false,
+     "text": "The recovery link is sent to the personal email address registered with the admissions office, and it stays valid for thirty minutes after it is requested, so the request should be made only when the student can open that mailbox"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:1",
+     "doc": "assignment",
+     "start": 176,
+     "end": 392,
+     "score": 0.27867558139999987,
+     "relevant": false,
+     "text": "If the portal is unavailable, email the file to the course coordinator before the deadline and keep the delivery receipt. Submit the final file as a PDF. Name the file with the course code and your roll number, e.g. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "How do I book a tennis court?",
+   "split": "dev",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 234,
+     "end": 348,
+     "score": 0.21432860683269517,
+     "relevant": false,
+     "text": "Contractors can work remotely only if the signed contract permits it. Employee rules do not apply to contractors. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:6",
+     "doc": "password",
+     "start": 856,
+     "end": 1014,
+     "score": 0.16812641963531622,
+     "relevant": false,
+     "text": "Report suspicious sign-in messages to the help desk at once, and do not click links in messages that claim to come from the university but ask for a password."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 694,
+     "end": 920,
+     "score": 0.15066553429996365,
+     "relevant": false,
+     "text": "Files larger than twenty megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "What do I do for blank printer pages?",
+   "split": "test",
+   "doc": "printer",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "printer:0",
+     "doc": "printer",
+     "start": 0,
+     "end": 251,
+     "score": 0.23181846120180305,
+     "relevant": true,
+     "text": "The equipment office maintains networked printers in every computer laboratory, and technicians follow the same checklist when users report a fault. For blank printer pages, check ink levels and run the cleaning utility. Print a test page afterwards. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "printer:3",
+     "doc": "printer",
+     "start": 591,
+     "end": 856,
+     "score": 0.1689264834378548,
+     "relevant": false,
+     "text": "For a blank scanner image, check document placement and select the correct scanning source. Printers that show a red warning light should be left alone until a technician arrives. Do not refill cartridges, because refilled cartridges void the maintenance contract. "
+    },
+    {
+     "rank": 3,
+     "chunk_id": "contractor:1",
+     "doc": "contractor",
+     "start": 234,
+     "end": 348,
+     "score": 0.14796028958384233,
+     "relevant": false,
+     "text": "Contractors can work remotely only if the signed contract permits it. Employee rules do not apply to contractors. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "How can I recover my login access?",
+   "split": "test",
+   "doc": "password",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "password:0",
+     "doc": "password",
+     "start": 0,
+     "end": 233,
+     "score": 0.15998809245729564,
+     "relevant": false,
+     "text": "The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every ninety days, and an expired password blocks access to email, the learning portal and the campus Wi-Fi until it is changed. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "printer:4",
+     "doc": "printer",
+     "start": 856,
+     "end": 944,
+     "score": 0.15373621005704596,
+     "relevant": false,
+     "text": "Report every repeated fault to the equipment office so that the printer can be replaced."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 392,
+     "end": 480,
+     "score": 0.12771902335469582,
+     "relevant": false,
+     "text": "CS4944_12345.pdf, so that the marker can match it to the class list without opening it. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "How should I hand in my coursework?",
+   "split": "test",
+   "doc": "assignment",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:4",
+     "doc": "assignment",
+     "start": 694,
+     "end": 920,
+     "score": 0.13663755699452715,
+     "relevant": false,
+     "text": "Files larger than twenty megabytes must be compressed first. Do not upload source code archives unless the instructions ask for them. Students who cannot see the upload button should check that they are enrolled in the course."
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:5",
+     "doc": "contractor",
+     "start": 812,
+     "end": 911,
+     "score": 0.13325281678601286,
+     "relevant": false,
+     "text": "Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late:5",
+     "doc": "late",
+     "start": 1033,
+     "end": 1222,
+     "score": 0.12739854545313925,
+     "relevant": false,
+     "text": "Students who submit before the deadline never lose marks for lateness. Keep a copy of every document sent to the coursework office, because staff may ask for it again during a later appeal."
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "What proof is needed when I was ill?",
+   "split": "test",
+   "doc": "late",
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:3",
+     "doc": "assignment",
+     "start": 480,
+     "end": 694,
+     "score": 0.2094304300029739,
+     "relevant": false,
+     "text": "The portal records the time of every upload, and only the latest upload before the deadline is marked, which means that an earlier version is replaced when a newer file is uploaded under the same assignment title. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "password:3",
+     "doc": "password",
+     "start": 477,
+     "end": 706,
+     "score": 0.17096136827600128,
+     "relevant": false,
+     "text": "The recovery link is sent to the personal email address registered with the admissions office, and it stays valid for thirty minutes after it is requested, so the request should be made only when the student can open that mailbox"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:1",
+     "doc": "late_exam",
+     "start": 245,
+     "end": 457,
+     "score": 0.16834096048410765,
+     "relevant": false,
+     "text": "Illness extensions require medical evidence within seven days after the deadline. The office does not accept evidence that was prepared before the illness began, and it does not accept evidence that is unsigned. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "What are tomorrow's flight prices?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:0",
+     "doc": "assignment",
+     "start": 0,
+     "end": 176,
+     "score": 0.2692720479998802,
+     "relevant": false,
+     "text": "Assignments for every course are collected electronically, and paper copies are not accepted unless the course outline says so. Upload assignments through the learning portal. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "contractor:5",
+     "doc": "contractor",
+     "start": 812,
+     "end": 911,
+     "score": 0.18791143642990052,
+     "relevant": false,
+     "text": "Visitors and volunteers are not covered by this policy and should ask the office that invited them."
+    },
+    {
+     "rank": 3,
+     "chunk_id": "password:5",
+     "doc": "password",
+     "start": 720,
+     "end": 856,
+     "score": 0.15414525039305757,
+     "relevant": false,
+     "text": "Staff will never ask for your password. Accounts that are locked after five failed attempts unlock automatically after fifteen minutes. "
+    }
+   ]
+  },
+  {
+   "strategy": "sentence",
+   "method": "tfidf",
+   "query": "Who won the football match?",
+   "split": "test",
+   "doc": null,
+   "top": [
+    {
+     "rank": 1,
+     "chunk_id": "assignment:2",
+     "doc": "assignment",
+     "start": 392,
+     "end": 480,
+     "score": 0.29781180854797196,
+     "relevant": false,
+     "text": "CS4944_12345.pdf, so that the marker can match it to the class list without opening it. "
+    },
+    {
+     "rank": 2,
+     "chunk_id": "late:1",
+     "doc": "late",
+     "start": 278,
+     "end": 544,
+     "score": 0.1183799411601922,
+     "relevant": false,
+     "text": "Students must apply through the coursework office and must not ask the course instructor directly, because the instructor cannot approve an extension for any student who has not first completed the online request form, attached the signed medical certificate, listed"
+    },
+    {
+     "rank": 3,
+     "chunk_id": "late_exam:2",
+     "doc": "late_exam",
+     "start": 457,
+     "end": 698,
+     "score": 0.11134872516959964,
+     "relevant": false,
+     "text": "Students who cannot obtain a certificate in time may send a written statement, and the committee will decide whether the statement is sufficient after it has compared the dates on the statement with the attendance record and with any earlier"
+    }
+   ]
+  }
+ ],
+ "audit": [
+  {
+   "strategy": "0",
+   "max_words": 40,
+   "max_tokens": null,
+   "limit": null,
+   "checked": "not performed (model tokenizer unavailable)"
+  },
+  {
+   "strategy": "10",
+   "max_words": 40,
+   "max_tokens": null,
+   "limit": null,
+   "checked": "not performed (model tokenizer unavailable)"
+  },
+  {
+   "strategy": "sentence",
+   "max_words": 40,
+   "max_tokens": null,
+   "limit": null,
+   "checked": "not performed (model tokenizer unavailable)"
+  }
+ ],
+ "repeats": 20
+}

@@ -1,0 +1,15 @@
+FAQ assistant. Type exit to stop.
+You: How do I reset my password?
+Bot: Use the recovery link on the login page. [source: it_help.txt]
+You: password recovery
+Bot: Possible matches; choose or rephrase your question:
+How do I reset my password? (similarity 0.456)
+Where do I submit my assignment? (similarity 0.000)
+Can illness justify a late submission? (similarity 0.000)
+You: 
+Bot: Please enter a question.
+You: volcano geology
+Bot: No matching FAQ. Please contact the help desk.
+You: When does the library open?
+Bot: The library opens at 8 a.m. on weekdays. [source: library.txt]
+You: exit

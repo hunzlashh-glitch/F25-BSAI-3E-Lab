@@ -1,0 +1,26 @@
+{
+  "late": {
+    "rule": "Late submission is normally penalized.",
+    "exception": "Illness extensions require medical evidence before the deadline."
+  },
+  "late_exam": {
+    "rule": "Late submission is accepted without penalty for two days after the published deadline.",
+    "exception": "Illness extensions require medical evidence within seven days after the deadline."
+  },
+  "password": {
+    "rule": "Reset a forgotten password using the recovery link.",
+    "exception": "If the link has expired, contact the IT help desk with your student ID, for example at the service counter in the main library or by telephone during office hours."
+  },
+  "assignment": {
+    "rule": "Upload assignments through the learning portal.",
+    "exception": "If the portal is unavailable, email the file to the course coordinator before the deadline and keep the delivery receipt."
+  },
+  "contractor": {
+    "rule": "Contractors can work remotely only if the signed contract permits it.",
+    "exception": "Employee rules do not apply to contractors."
+  },
+  "printer": {
+    "rule": "For blank printer pages, check ink levels and run the cleaning utility.",
+    "exception": "If the test page is still blank after two cleaning cycles, replace the ink cartridge and record the fault in the equipment log."
+  }
+}

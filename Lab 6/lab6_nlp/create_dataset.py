@@ -1,0 +1,143 @@
+import json
+from pathlib import Path
+
+docs = {
+    "late": (
+        "Assessment rules for undergraduate courses apply to every written assignment, "
+        "laboratory report and take-home test that is marked by the department during the teaching term. "
+        "Late submission is normally penalized. "
+        "Illness extensions require medical evidence before the deadline. "
+        "Students must apply through the coursework office and must not ask the course instructor directly, "
+        "because the instructor cannot approve an extension for any student who has not first completed "
+        "the online request form, attached the signed medical certificate, listed every affected assessment, "
+        "and confirmed that the information provided is accurate and complete. "
+        "Each request is reviewed within three working days. "
+        "An approved request extends the deadline by up to seven days, while a rejected request leaves "
+        "the original penalty in place. "
+        "Group assignments follow the same process, but every member who needs an extension must submit "
+        "a separate request. "
+        "Work submitted after the extended deadline loses ten percent of its marks for each additional day. "
+        "Students who submit before the deadline never lose marks for lateness. "
+        "Keep a copy of every document sent to the coursework office, because staff may ask for it again "
+        "during a later appeal."),
+    "late_exam": (
+        "The Examination Office issues this addendum for students of the Faculty of Computing who miss a "
+        "coursework deadline because of illness or a family emergency. "
+        "Late submission is accepted without penalty for two days after the published deadline. "
+        "Illness extensions require medical evidence within seven days after the deadline. "
+        "The office does not accept evidence that was prepared before the illness began, and it does not "
+        "accept evidence that is unsigned. "
+        "Students who cannot obtain a certificate in time may send a written statement, and the committee "
+        "will decide whether the statement is sufficient after it has compared the dates on the statement "
+        "with the attendance record and with any earlier requests made by the same student. "
+        "Decisions are published on the portal within five working days. "
+        "This addendum applies to the Faculty of Computing only, and other faculties follow the main "
+        "assessment rules. "
+        "If the two documents disagree, the faculty office will tell students which document applies "
+        "to their course. "
+        "Students should keep every email they receive from the office until the semester results are released."),
+    "password": (
+        "The IT help desk supports students and staff who cannot sign in to university systems. "
+        "Passwords expire every ninety days, and an expired password blocks access to email, the learning "
+        "portal and the campus Wi-Fi until it is changed. "
+        "Reset a forgotten password using the recovery link. "
+        "If the link has expired, contact the IT help desk with your student ID, for example at the service "
+        "counter in the main library or by telephone during office hours. "
+        "Never share recovery codes. "
+        "The recovery link is sent to the personal email address registered with the admissions office, "
+        "and it stays valid for thirty minutes after it is requested, so the request should be made only "
+        "when the student can open that mailbox immediately. "
+        "Staff will never ask for your password. "
+        "Accounts that are locked after five failed attempts unlock automatically after fifteen minutes. "
+        "Report suspicious sign-in messages to the help desk at once, and do not click links in messages "
+        "that claim to come from the university but ask for a password."),
+    "assignment": (
+        "Assignments for every course are collected electronically, and paper copies are not accepted "
+        "unless the course outline says so. "
+        "Upload assignments through the learning portal. "
+        "If the portal is unavailable, email the file to the course coordinator before the deadline and "
+        "keep the delivery receipt. "
+        "Submit the final file as a PDF. "
+        "Name the file with the course code and your roll number, e.g. CS4944_12345.pdf, so that the marker "
+        "can match it to the class list without opening it. "
+        "The portal records the time of every upload, and only the latest upload before the deadline is "
+        "marked, which means that an earlier version is replaced when a newer file is uploaded under the "
+        "same assignment title. "
+        "Files larger than twenty megabytes must be compressed first. "
+        "Do not upload source code archives unless the instructions ask for them. "
+        "Students who cannot see the upload button should check that they are enrolled in the course."),
+    "contractor": (
+        "Remote work arrangements are reviewed each year by the human resources office for all people who "
+        "work at the university, and the rules differ between employees and contractors. "
+        "Employees may request remote work with manager approval. "
+        "Contractors can work remotely only if the signed contract permits it. "
+        "Employee rules do not apply to contractors. "
+        "A manager cannot add remote work to a contract by email, and a contractor who has not been given "
+        "written permission by the contracts office must work from campus on the days named in the contract, "
+        "even when the task could be completed from home. "
+        "Remote workers must use the university virtual private network and must not store university data "
+        "on personal devices. "
+        "Requests are answered within ten working days. "
+        "Approval can be withdrawn with two weeks of notice. "
+        "Visitors and volunteers are not covered by this policy and should ask the office that invited them."),
+    "printer": (
+        "The equipment office maintains networked printers in every computer laboratory, and technicians "
+        "follow the same checklist when users report a fault. "
+        "For blank printer pages, check ink levels and run the cleaning utility. "
+        "Print a test page afterwards. "
+        "If the test page is still blank after two cleaning cycles, replace the ink cartridge and record "
+        "the fault in the equipment log. "
+        "Switch off the printer before opening the rear panel, because the heating unit stays hot for several "
+        "minutes after use, and never remove a jammed sheet by pulling it sideways while the rollers are "
+        "still turning. "
+        "For a blank scanner image, check document placement and select the correct scanning source. "
+        "Printers that show a red warning light should be left alone until a technician arrives. "
+        "Do not refill cartridges, because refilled cartridges void the maintenance contract. "
+        "Report every repeated fault to the equipment office so that the printer can be replaced."),
+}
+
+evidence = {
+    "late": "Illness extensions require medical evidence before the deadline.",
+    "password": "Reset a forgotten password using the recovery link.",
+    "assignment": "Upload assignments through the learning portal.",
+    "contractor": "Contractors can work remotely only if the signed contract permits it.",
+    "printer": "For blank printer pages, check ink levels and run the cleaning utility.",
+}
+
+rules = {
+    "late": {"rule": "Late submission is normally penalized.",
+             "exception": "Illness extensions require medical evidence before the deadline."},
+    "late_exam": {"rule": "Late submission is accepted without penalty for two days after the published deadline.",
+                  "exception": "Illness extensions require medical evidence within seven days after the deadline."},
+    "password": {"rule": "Reset a forgotten password using the recovery link.",
+                 "exception": "If the link has expired, contact the IT help desk with your student ID, for example at the service counter in the main library or by telephone during office hours."},
+    "assignment": {"rule": "Upload assignments through the learning portal.",
+                   "exception": "If the portal is unavailable, email the file to the course coordinator before the deadline and keep the delivery receipt."},
+    "contractor": {"rule": "Contractors can work remotely only if the signed contract permits it.",
+                   "exception": "Employee rules do not apply to contractors."},
+    "printer": {"rule": "For blank printer pages, check ink levels and run the cleaning utility.",
+                "exception": "If the test page is still blank after two cleaning cycles, replace the ink cartridge and record the fault in the equipment log."},
+}
+
+questions = [
+    ("What is required for illness extensions?", "late", "dev"),
+    ("How do I reset a forgotten password?", "password", "dev"),
+    ("Where do I upload assignments?", "assignment", "dev"),
+    ("Can contractors work remotely?", "contractor", "dev"),
+    ("What is the cafeteria menu today?", None, "dev"),
+    ("How do I book a tennis court?", None, "dev"),
+    ("What do I do for blank printer pages?", "printer", "test"),
+    ("How can I recover my login access?", "password", "test"),
+    ("How should I hand in my coursework?", "assignment", "test"),
+    ("What proof is needed when I was ill?", "late", "test"),
+    ("What are tomorrow's flight prices?", None, "test"),
+    ("Who won the football match?", None, "test"),
+]
+queries = [dict(query=q, doc=doc, evidence=evidence[doc] if doc else None, split=split)
+           for q, doc, split in questions]
+
+for name, data in [("corpus.json", docs), ("queries.json", queries), ("rules.json", rules)]:
+    if Path(name).exists():
+        raise FileExistsError("Refusing to overwrite " + name)
+    Path(name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+print("Created corpus.json, queries.json and rules.json")

@@ -1,0 +1,7 @@
+Backend: tfidf
+it:0 score=0.343
+A forgotten password can be reset using the recovery link.
+assessment:0 score=0.000
+Assignments are uploaded through the learning portal.
+Backend: embedding
+Backend unavailable: ModuleNotFoundError: No module named 'sentence_transformers'

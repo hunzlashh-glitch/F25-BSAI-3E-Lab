@@ -1,0 +1,39 @@
+Token comparison on 8 inputs
+
+Original:    'AI, search!'
+Whitespace:  ['AI,', 'search!'] 2
+Word-like:   ['AI', 'search'] 2
+
+Original:    "I can't log in."
+Whitespace:  ['I', "can't", 'log', 'in.'] 4
+Word-like:   ['I', 'can', 't', 'log', 'in'] 5
+
+Original:    'I can’t log in.'
+Whitespace:  ['I', 'can’t', 'log', 'in.'] 4
+Word-like:   ['I', 'can', 't', 'log', 'in'] 5
+
+Original:    'help@example.com'
+Whitespace:  ['help@example.com'] 1
+Word-like:   ['help', 'example', 'com'] 3
+
+Original:    'CS4944'
+Whitespace:  ['CS4944'] 1
+Word-like:   ['CS4944'] 1
+
+Original:    ''
+Whitespace:  [] 0
+Word-like:   [] 0
+
+Original:    'یہ ایک مثال ہے'
+Whitespace:  ['یہ', 'ایک', 'مثال', 'ہے'] 4
+Word-like:   ['یہ', 'ایک', 'مثال', 'ہے'] 4
+
+Original:    'POST /v2/token/refresh'
+Whitespace:  ['POST', '/v2/token/refresh'] 2
+Word-like:   ['POST', 'v2', 'token', 'refresh'] 4
+
+Model tokenizer not available in this run: ModuleNotFoundError: No module named 'sentence_transformers'
+
+Normalization risk
+Original:   Do not submit the assignment late.
+Normalized: submit assignment late

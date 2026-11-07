@@ -1,0 +1,2 @@
+remote:contractor score=0.435
+Contractors may work remotely only when the signed contract explicitly permits remote work.

@@ -1,0 +1,64 @@
+{
+  "original_words": 990,
+  "summary": {
+    "0": {
+      "chunks": 27,
+      "mean": 36.7,
+      "min": 11,
+      "max": 40,
+      "emitted": 990,
+      "duplicated": 0,
+      "survive": {
+        "late": true,
+        "late_exam": false,
+        "password": false,
+        "assignment": false,
+        "contractor": false,
+        "printer": false
+      },
+      "survive_count": 1
+    },
+    "10": {
+      "chunks": 33,
+      "mean": 38.2,
+      "min": 21,
+      "max": 40,
+      "emitted": 1260,
+      "duplicated": 270,
+      "survive": {
+        "late": true,
+        "late_exam": false,
+        "password": false,
+        "assignment": false,
+        "contractor": true,
+        "printer": false
+      },
+      "survive_count": 2
+    },
+    "sentence": {
+      "chunks": 35,
+      "mean": 28.3,
+      "min": 1,
+      "max": 40,
+      "emitted": 990,
+      "duplicated": 0,
+      "survive": {
+        "late": true,
+        "late_exam": false,
+        "password": true,
+        "assignment": false,
+        "contractor": true,
+        "printer": false
+      },
+      "survive_count": 3
+    }
+  },
+  "doc_words": {
+    "late": 187,
+    "late_exam": 177,
+    "password": 171,
+    "assignment": 153,
+    "contractor": 150,
+    "printer": 152
+  }
+}

@@ -1,0 +1,9 @@
+Predictions written before running any chunking code (from the word positions of each rule/exception pair in corpus.json, counting whitespace words from 0).
+
+Pair positions (rule start-end, exception start-end):
+late 25-30, 30-38 | late_exam 25-38, 38-49 | password 39-47, 47-77 | assignment 19-25, 25-45 | contractor 36-47, 47-54 | printer 21-33, 38-61
+
+P1. 40-word windows with overlap 0 cover words 0-39, 40-79, 80-119 and so on. Only the late pair ends before word 40, so I predict the other five pairs are cut by a window boundary.
+P2. 40-word windows with overlap 10 start at words 0, 30, 60 and 90. A pair survives only if it lies inside one 40-word window. I predict that only the contractor pair (36-54, inside words 30-69) is rescued and that late_exam, password, assignment and printer still lose evidence.
+P3. Sentence-aware packing with a 40-word budget keeps whole sentences, but a pair survives only if both sentences fit in the same packed chunk. I predict few pairs survive, and sentences longer than 40 words fall back to windows.
+P4. The simple sentence splitter will cut after "e.g." in the assignment document because it splits at a full stop followed by a space.

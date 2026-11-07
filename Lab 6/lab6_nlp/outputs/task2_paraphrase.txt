@@ -1,0 +1,28 @@
+Backend: tfidf
+Query: How can I regain access to my account? | intended document: password
+  1. password:0 score=0.222 chars 0-233
+     The IT help desk supports students and staff who cannot sign in to university systems. Passwords expire every 
+  2. printer:4 score=0.212 chars 856-944
+     Report every repeated fault to the equipment office so that the printer can be replaced.
+  3. assignment:2 score=0.176 chars 392-480
+     CS4944_12345.pdf, so that the marker can match it to the class list without opening it. 
+
+Query: I was sick so my coursework will be late, what do I need? | intended document: late
+  1. printer:4 score=0.175 chars 856-944
+     Report every repeated fault to the equipment office so that the printer can be replaced.
+  2. late_exam:0 score=0.134 chars 0-245
+     The Examination Office issues this addendum for students of the Faculty of Computing who miss a coursework dea
+  3. contractor:3 score=0.110 chars 564-593
+     could be completed from home.
+
+Query: Is it okay for a freelancer to work from home? | intended document: contractor
+  1. contractor:3 score=0.414 chars 564-593
+     could be completed from home.
+  2. contractor:2 score=0.225 chars 348-563
+     A manager cannot add remote work to a contract by email, and a contractor who has not been given written permi
+  3. late:0 score=0.209 chars 0-278
+     Assessment rules for undergraduate courses apply to every written assignment, laboratory report and take-home 
+
+Backend: embedding
+Backend unavailable: ModuleNotFoundError: No module named 'sentence_transformers'
+

@@ -1,0 +1,12 @@
+Embedding model unavailable: ModuleNotFoundError: No module named 'sentence_transformers'
+Only the TF-IDF configurations are run; embedding rows are not reported.
+0 tfidf dev Hit@3/MRR@3 0.5 0.375 chunks 27 encode/search seconds 0.00172 6.5e-05
+0 tfidf test Hit@3/MRR@3 0.25 0.25 chunks 27 encode/search seconds 0.00172 6.5e-05
+10 tfidf dev Hit@3/MRR@3 1.0 0.708 chunks 33 encode/search seconds 0.00158 6.4e-05
+10 tfidf test Hit@3/MRR@3 0.25 0.25 chunks 33 encode/search seconds 0.00158 6.4e-05
+sentence tfidf dev Hit@3/MRR@3 1.0 1.0 chunks 35 encode/search seconds 0.0015 6.9e-05
+sentence tfidf test Hit@3/MRR@3 0.25 0.25 chunks 35 encode/search seconds 0.0015 6.9e-05
+
+Manual metric check (sentence-aware, tfidf): How do I reset a forgotten password?
+  top-3 ids: ['password:1', 'password:6', 'contractor:1'] relevant flags: [True, False, False]
+  first relevant rank: 1 -> reciprocal rank: 1.0
